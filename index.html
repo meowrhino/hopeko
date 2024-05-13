@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,146 @@
     <style>
         /* Estilos generales */
         body {
-            background-color: #f8f8f8; /* Fondo blanco roto */
-            font-family: Arial, sans-serif; /* Fuente por defecto */
-            color: #333; /* Color de texto por defecto */
+            background-color: #f8f8f8;
+            /* Fondo blanco roto */
+            font-family: Arial, sans-serif;
+            /* Fuente por defecto */
+            color: #333;
+            /* Color de texto por defecto */
         }
 
         /* Estilos para los artículos */
         article {
-            background-color: #222; /* Fondo gris oscuro más oscuro */
-            padding: 20px;
-            margin-bottom: 20px;
+            background-color: #222;
+            /* Fondo gris oscuro más oscuro */
+            padding: 15px 35px;
+            margin-boottom: 20px;
             border-radius: 10px;
 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra un poco más oscura */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Sombra un poco más oscura */
 
             max-width: 70%;
             margin: 30px;
 
-            font-family: 'Courier New', Courier, monospace; /* Tipografía mono */
-
-            /*
-            display: flex;
-            flex-direction: column;
-            asi se arregla todo
-            pero no me gusta el espacio que queda entre el video de yt y el final*/
+            font-family: 'Courier New', Courier, monospace;
+            /* Tipografía mono */
         }
 
         /* Estilos para la clase "ideas" */
         .ideas {
-            color: #65E65E; /* Verde para ideas */
+            color: #65E65E;
+            /* Verde para ideas */
         }
 
         /* Estilos para la clase "referentes" */
         .referentes {
-            color: #FFA1A8; /* Rosa para referentes */
-            
+            color: #FFA1A8;
+            /* Rosa para referentes */
         }
 
         /* Estilos para la clase "canciones" */
         .canciones {
-            color: #FF7F4D; /* Naranja para canciones */
+            color: #FF7F4D;
+            /* Naranja para canciones */
         }
 
         .data {
-            background-color: #EEE8AA; /* Fondo blanco bonito */
-
-            margin-left: auto;
-
+            background-color: #EEE8AA;
+            /* Fondo blanco bonito */
+            margin-right: -20px;
             color: #222;
             padding: 3px 8px;
+            margin-top: 50px;
             border-radius: 2px;
             text-align: right;
-
-            box-shadow: 0 1px 2px #FAFAD2; /* Sombra un poco más amarilla */
+            box-shadow: 0 1px 2px #FAFAD2;
+            /* Sombra un poco más amarilla */
             display: inline-block;
-        
         }
 
         .data-container {
             text-align: right;
         }
 
+        /*quitar estilos a los links*/
+        a {
+            color: #007bff;
+            /* Hereda el color del texto del elemento padre */
+            text-decoration: none;
+            /* Quita la decoración subrayada predeterminada */
+        }
+
+
+
+        /* Estilos para el reproductor de audio */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+            /* Espacio superior */
+            margin-bottom: 10px;
+            /* Espacio inferior */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Sombra ligera */
+        }
+
+        /* Estilos para los controles del reproductor de audio */
+        audio::-webkit-media-controls-panel {
+            background-color: #333;
+            /* Fondo gris oscuro */
+            color: #fff;
+            /* Color del texto blanco */
+            border-radius: 0;
+            /* Bordes cuadrados */
+        }
+
+        /* Estilos para los botones del reproductor de audio */
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-pause-button,
+        audio::-webkit-media-controls-mute-button,
+        audio::-webkit-media-controls-volume-slider {
+            filter: invert(100%);
+            /* Invertir el color para que los iconos sean blancos */
+        }
+
+        /* Estilos para la barra de progreso del reproductor de audio */
+        audio::-webkit-media-controls-timeline {
+            background-color: transparent;
+            /* Fondo transparente */
+        }
+
+        /* Estilos para el indicador de progreso de la barra de progreso */
+        audio::-webkit-media-controls-current-time-display,
+        audio::-webkit-media-controls-time-remaining-display {
+            color: #fff;
+            /* Color del texto blanco */
+        }
+
+        audio::-webkit-media-controls-enclosure {
+            border-radius: 3px;
+        }
+
+
+
+        /* Estilos para el reproductor de video de YouTube */
+        iframe {
+            width: 100%;
+            /* Ocupa todo el ancho disponible */
+            height: 315px;
+            /* Establece una altura fija (puedes ajustarla según tus necesidades) */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Sombra ligera */
+            border-radius: 2px;
+        }
     </style>
 </head>
+
 <body>
     <article class="ideas">
         <h3 class="titulo">Historia para una canción</h3>
-        <p>Hubo una vez un lugar mágico donde los sueños cobraban vida. En este lugar, el sol brillaba con un resplandor dorado, y las estrellas bailaban en el cielo nocturno. En este mundo de fantasía, dos almas se encontraron en un encuentro fugaz pero eterno...</p>
+        <p>Hubo una vez un lugar mágico donde los sueños cobraban vida. En este lugar, el sol brillaba con un resplandor
+            dorado, y las estrellas bailaban en el cielo nocturno. En este mundo de fantasía, dos almas se encontraron
+            en un encuentro fugaz pero eterno...</p>
         <div class="data-container">
             <div class="data">
                 <small class="date">13/05/24 22:39</small>
@@ -82,21 +156,43 @@
             </div>
         </div>
     </article>
-    
+
     <article class="referentes">
-        <h3 class="titulo">Mi Canción Favorita</h3>
+        <h3 class="titulo">opening soul eater</h3>
         <!-- Enlace al video de YouTube -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit distinctio sunt soluta aperiam praesentium sed voluptatum, nihil rerum fugiat vitae illo animi. Quas quasi ab impedit obcaecati laboriosam molestiae ut!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zzJ8U8OtEsE" frameborder="0"
+            allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit distinctio sunt soluta aperiam praesentium
+            sed voluptatum, nihil rerum fugiat vitae illo animi. Quas quasi ab impedit obcaecati laboriosam molestiae
+            ut!</p>
         <div class="data-container">
             <div class="data">
                 <small class="date">13/05/24 22:39</small>
-                <small class="place">lugar</small>
+                <small class="place">casa</small>
                 <small class="type">ref</small>
             </div>
         </div>
     </article>
-    
+
+    <article class="referentes">
+        <h3 class="titulo">el DUN DUN DUN del segundo <a
+                href="https://youtu.be/fkOuhp24RN4?si=Te3n0TADluzgDHR8&t=111">1:50</a></h3>
+        <!-- Enlace al video de YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fkOuhp24RN4?si=TwhNwYbI1o7VHztt"
+            frameborder="0" allowfullscreen></iframe>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit distinctio sunt soluta aperiam praesentium
+            sed voluptatum, nihil rerum fugiat vitae illo animi. Quas quasi ab impedit obcaecati laboriosam molestiae
+            ut!</p>
+        <div class="data-container">
+            <div class="data">
+                <small class="date">13/05/24 23:18</small>
+                <small class="place">casa</small>
+                <small class="type">ref</small>
+            </div>
+        </div>
+    </article>
+
     <article class="canciones">
         <h3 class="titulo">Mi Canción Original</h3>
         <!-- Reemplaza la URL del audio con la tuya cuando la tengas -->
@@ -104,7 +200,9 @@
             <source src="ruta_del_audio.mp3" type="audio/mpeg">
             Tu navegador no soporta el elemento de audio.
         </audio>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium expedita quod nam, ratione quis libero nisi unde minus! Numquam dolore alias ducimus necessitatibus illo laudantium assumenda adipisci. Rem, minus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium expedita quod nam, ratione quis
+            libero nisi unde minus! Numquam dolore alias ducimus necessitatibus illo laudantium assumenda adipisci. Rem,
+            minus?</p>
         <div class="data-container">
             <div class="data">
                 <small class="date">13/05/24 22:39</small>
@@ -113,6 +211,6 @@
             </div>
         </div>
     </article>
-    
 </body>
+
 </html>
