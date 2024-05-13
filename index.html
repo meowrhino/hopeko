@@ -1,32 +1,98 @@
-/* Estilos generales */
-body {
-    background-color: #f7f7f7; /* Fondo blanco roto bonito */
-    font-family: Arial, sans-serif; /* Fuente por defecto */
-    color: #333; /* Color de texto por defecto */
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Artículos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #f8f8f8; /* Fondo blanco roto */
+            font-family: Arial, sans-serif; /* Fuente por defecto */
+            color: #333; /* Color de texto por defecto */
+        }
 
-/* Estilos para los artículos */
-.article {
-    background-color: #fff; /* Fondo blanco */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
+        /* Estilos para los artículos */
+        .article {
+            background-color: #222; /* Fondo gris oscuro más oscuro */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
 
-/* Estilos para la clase "ideas" */
-.ideas {
-    color: #4CAF50; /* Verde para ideas */
-    font-family: 'Courier New', Courier, monospace; /* Tipografía mono */
-}
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra un poco más oscura */
 
-/* Estilos para la clase "referentes" */
-.referentes {
-    color: #2196F3; /* Azul para referentes */
-    font-family: 'Courier New', Courier, monospace; /* Tipografía mono */
-}
+            max-width: 70%;
+            margin: 30px;
 
-/* Estilos para la clase "canciones" */
-.canciones {
-    color: #FF5722; /* Naranja para canciones */
-    font-family: Arial, sans-serif; /* Tipografía sans-serif */
-}
+            font-family: 'Courier New', Courier, monospace; /* Tipografía mono */
+        }
+
+        /* Estilos para la clase "ideas" */
+        .ideas {
+            color: #65E65E; /* Verde para ideas */
+        }
+
+        /* Estilos para la clase "referentes" */
+        .referentes {
+            color: #FFA1A8; /* Rosa para referentes */
+            
+        }
+
+        /* Estilos para la clase "canciones" */
+        .canciones {
+            color: #FF7F4D; /* Naranja para canciones */
+        }
+
+        .data {
+            background-color: #f5f5f5; /* Fondo blanco bonito */
+   
+            display: inline-block;
+            position: relative;
+
+            color: #222;
+            padding: 3px 8px;
+            border-radius: 2px;
+
+            box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); /* Sombra un poco más clara */
+        
+        }
+    </style>
+</head>
+<body>
+    <article class="ideas article">
+        <h3 class="titulo">Historia para una canción</h3>
+        <p>Hubo una vez un lugar mágico donde los sueños cobraban vida. En este lugar, el sol brillaba con un resplandor dorado, y las estrellas bailaban en el cielo nocturno. En este mundo de fantasía, dos almas se encontraron en un encuentro fugaz pero eterno...</p>
+        <div class="data">
+            <small class="date">Fecha: 13/05/24</small>
+            <small class="place">Lugar: Imaginación</small>
+            <small class="type">Tipo: Idea</small>
+        </div>
+    </article>
+
+    <article class="referentes article">
+        <h3 class="titulo">Mi Canción Favorita</h3>
+        <!-- Enlace al video de YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <div class="data">
+            <small class="date">Fecha: 13/05/24</small>
+            <small class="place">Lugar: Internet</small>
+            <small class="type">Tipo: Referente</small>
+        </div>
+    </article>
+
+    <article class="canciones article">
+        <h3 class="titulo">Mi Canción Original</h3>
+        <!-- Reemplaza la URL del audio con la tuya cuando la tengas -->
+        <audio controls>
+            <source src="ruta_del_audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <p>Esta es una canción que compuse recientemente. Aunque el audio está vacío por ahora, pronto lo llenaré con música para que todos la escuchen.</p>
+        <div class="data">
+            <small class="date">Fecha: 13/05/24</small>
+            <small class="place">Lugar: Mi Estudio</small>
+            <small class="type">Tipo: Canción</small>
+        </div>
+    </article>
+</body>
+</html>
