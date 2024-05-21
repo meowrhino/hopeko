@@ -9,65 +9,52 @@
         /* Estilos generales */
         body {
             background-color: #f8f8f8;
-            /* Fondo blanco roto */
             font-family: Arial, sans-serif;
-            /* Fuente por defecto */
             color: #333;
-            /* Color de texto por defecto */
         }
 
         /* Estilos para los artículos */
         article {
             background-color: #222;
-            /* Fondo gris oscuro más oscuro */
             padding: 15px 35px;
-            margin-boottom: 20px;
+            margin-bottom: 20px;
             border-radius: 10px;
-
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* Sombra un poco más oscura */
-
             max-width: 70%;
             margin: 30px;
-
             font-family: 'Courier New', Courier, monospace;
-            /* Tipografía mono */
+            color: #888888;
         }
 
-        /* Estilos para la clase "ideas" */
         .ideas {
             color: #65E65E;
-            /* Verde para ideas */
         }
 
-        /* Estilos para la clase "referentes" */
         .referentes {
             color: #FFA1A8;
-            /* Rosa para referentes */
         }
 
-        /* Estilos para la clase "canciones" */
         .canciones {
             color: #FF7F4D;
-            /* Naranja para canciones */
         }
 
-        .txt {
-            color: #888888;
-            /* Naranja para canciones */
+        .apuntes {
+            color: #A67BFF;
+        }
+
+        .ejercicios {
+            color: #FFD700;
         }
 
         .data {
-            background-color: #EEE8AA;
-            /* Fondo blanco bonito */
             margin-right: -20px;
             color: #222;
+            /* Color de texto predeterminado */
             padding: 3px 8px;
             margin-top: 50px;
             border-radius: 2px;
             text-align: right;
             box-shadow: 0 1px 2px #FAFAD2;
-            /* Sombra un poco más amarilla */
             display: inline-block;
         }
 
@@ -75,106 +62,244 @@
             text-align: right;
         }
 
-        /*quitar estilos a los links*/
+        /* Estilos para los links */
         a {
             color: #007bff;
-            /* Hereda el color del texto del elemento padre */
             text-decoration: none;
-            /* Quita la decoración subrayada predeterminada */
         }
-
-
 
         /* Estilos para el reproductor de audio */
         audio {
             width: 100%;
             margin-top: 10px;
-            /* Espacio superior */
             margin-bottom: 10px;
-            /* Espacio inferior */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Sombra ligera */
         }
 
-        /* Estilos para los controles del reproductor de audio */
         audio::-webkit-media-controls-panel {
             background-color: #333;
-            /* Fondo gris oscuro */
             color: #fff;
-            /* Color del texto blanco */
             border-radius: 0;
-            /* Bordes cuadrados */
         }
 
-        /* Estilos para los botones del reproductor de audio */
         audio::-webkit-media-controls-play-button,
         audio::-webkit-media-controls-pause-button,
         audio::-webkit-media-controls-mute-button,
         audio::-webkit-media-controls-volume-slider {
             filter: invert(100%);
-            /* Invertir el color para que los iconos sean blancos */
         }
 
-        /* Estilos para la barra de progreso del reproductor de audio */
         audio::-webkit-media-controls-timeline {
             background-color: transparent;
-            /* Fondo transparente */
         }
 
-        /* Estilos para el indicador de progreso de la barra de progreso */
         audio::-webkit-media-controls-current-time-display,
         audio::-webkit-media-controls-time-remaining-display {
             color: #fff;
-            /* Color del texto blanco */
         }
 
         audio::-webkit-media-controls-enclosure {
             border-radius: 3px;
         }
 
-
-
         /* Estilos para el reproductor de video de YouTube */
         iframe {
             width: 100%;
-            /* Ocupa todo el ancho disponible */
             height: 315px;
-            /* Establece una altura fija (puedes ajustarla según tus necesidades) */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Sombra ligera */
             border-radius: 2px;
         }
     </style>
 </head>
 
 <body>
-    <!--
-    <article class="ideas">
-        <h3 class="titulo">Historia para una canción</h3>
-        <p>Hubo una vez un lugar mágico donde los sueños cobraban vida. En este lugar, el sol brillaba con un resplandor
-            dorado, y las estrellas bailaban en el cielo nocturno. En este mundo de fantasía, dos almas se encontraron
-            en un encuentro fugaz pero eterno...</p>
+
+    <article class="ejercicios">
+        <h3 class="titulo">para la clase que viene <b>(martes 4 junio 2024)</b></h3>
+        <p>LOOP a 160 (o más lento si quieres) bpms</p>
+        <p>tiene que contener:</p>
+        <p>-línea de bombo en 4x4<br>(puedes experimentar)<br>(mejor que cada 1a nota de cada 16 suene y esté en su
+            sitio)
+        </p>
+        <p>línea de platilo</p>
+        <p>línea de caja</p>
+        <p>+ línea de bajo con 2 acordes</p>
+        <p>hacer todo esto a partir de una librería que te pasa diego (Big Fish Audio - Old Skool House) <br>buscar info
+            para editar LA ENVOLVENTE</p>
+        <p>+ 1 secuencia de sinte (con la librería de diego)</p>
+        <p>+ 1 pad</p>
+        <p>=&gt; tienes que tardar menos de 2 horas (realmente menos de 1h)<br>si llega a 2 horas han de ser 2 horas
+            disfrutando<br>cuando dejes de disfrutar PARAS</p>
+        <p>que cada capa añada capas de disfrute</p>
+        <p>igual se te ocurren cosas, ve apuntándolas</p>
+        <p>centrarte en que te inspire, aunque suene mal. de hecho si te suena mal o si te hace sentir incómodo déjalo
+            así y
+            lo vemos. que no suene a terminado</p>
+        <p>"ay pues este sonido igual no me encaja" -&gt; pues a buscar (pero en esa librería)</p>
+
         <div class="data-container">
             <div class="data">
-                <small class="date">13/05/24 22:39</small>
-                <small class="place">lugar</small>
-                <small class="type">idea</small>
+                <small class="date">21/05/24 20:47</small>
+                <small class="place">casa</small>
+                <small class="type"><b>TAREA</b></small>
             </div>
         </div>
     </article>
-    -->
+
+    <article class="apuntes">
+        <h3 class="titulo">apuntes clase 20/05/24</h3>
+
+        <p>cuando tocas una guitarra con la mano hay muchos detalles que no se notan cuando la haces con un ratón</p>
+        <p>o incluso pillar el sample</p>
+        <p>llevarlo al estilo tuyo: ¿Qué puedes aportar tú?<br>intentar replicar al 100% algo<br>y no va a sonr
+            exactamente
+            igual<br>//pero en la distancia a ese 100% salen cosas nuevas</p>
+        <p>nueva herramienta: FL Studio<br>--&gt; para sacar <b>stems</b></p>
+        <p>(para ver por separado las partes de la canción)</p>
+        <p>----------------------------------------------------</p>
+        <p>Resonance + Bolso Valentino<br>Soul Eater María Escarmiento</p>
+        <p>=&gt; qué tienen en común?</p>
+        <p>-&gt; están orientadas a circuitos distintos</p>
+        <p>----------------------------------------------------</p>
+        <p>resonance ---&gt; Guitarra <u>muy sucia</u> muchos pedales <br>y <u>suena por todas partes</u></p>
+        <p><b>¿puedo hacer una guitarra así sin tener una guitarra?</b></p>
+        <p><u>ratón vs guitarra orgánica</u></p>
+        <p>----------------------------------------------------</p>
+        <p>-&gt; Buscar y encontrar en los <b>stems</b> qué hay en lo que te gudta y cómo puedes hacerlo tú.<br>1.- que
+            encuentres tu estilo<br>2.- luego ver si necesitas pedirle sonidos a otra persona</p>
+        <p>----------------------------------------------------</p>
+        <p>Bolso Valentino -&gt; hard dance<br><u>bass hunter</u><br>tektonik?</p>
+        <p>cuando suena el bombo no suena el bajo y viceversa</p>
+        <p>efecto de <u>ducking</u></p>
+        <p>//no era el sidechain? o algo así???</p>
+        <p>Como quieres que se fusionen bombo y bajo<br>apagas uno mientras suena el otro</p>
+        <p>----------------------------------------------------</p>
+        <p>ambas canciones son muy "<u>transparentes</u>"</p>
+        <p>la voz es la protagonista</p>
+        <p>----------------------------------------------------</p>
+        <p>Resonance:</p>
+        <p>-&gt; instrumentos de "fondo"<br>-&gt; voz en el frente<br>-&gt; le das ritmo a una presentación de
+            personajes no
+            hace falta que esté superdelante //(porque el protagonista es otro, no es ni la voz sino esta presentación
+            de
+            personajes)</p>
+        <p>----------------------------------------------------</p>
+        <p>Bolso Valentino -&gt; instrumental al mismo nivel de la voz</p>
+        <p>----------------------------------------------------</p>
+        <p>para qué creas?<br>-&gt; acompañar a unas imágenes<br>-&gt; explicar una historia</p>
+        <p>----------------------------------------------------</p>
+        <p>Cutre -&gt; algo que suena mal sin querer<br><u>sigues una estética no deseada.</u><br>una estética falsa,
+            por no
+            llegar <span style="opacity: 0.1;">nisemono</span></p>
+        <p>----------------------------------------------------</p>
+        <p>diego estuvo produciendo intentando hacerlo todo él solo y no salía bien</p>
+        <p>----------------------------------------------------</p>
+        <p>mejor encontrar una<br><u>buena librería -&gt; unos sonidos <br>que te muevan y hacer música <br>con éso</u>
+        </p>
+        <p>con el menor tiempo posible conseguir cosas interesantes <span style="opacity: 0.1;">eficiencia</span></p>
+        <p>tiene que ser fácil<br>cojes los planes de un sitio<br>las piedras de otro<br>no hace falta tallar las
+            piedras
+        </p>
+        <p>----------------------------------------------------</p>
+        <p>que diego te pase una carpeta de samples <br>y hacer una canción</p>
+        <p>----------------------------------------------------</p>
+        <p>ir haciendo una carpeta con soniditos<br>"escuché ésto y me gustó"<br>y lo guardo</p>
+        <p>-&gt; con los stems de fl studio<br>-&gt; cortas el cacho que te interesa y lo ecualizas<br>-&gt; o lo haces
+            por
+            internet</p>
+        <p>----------------------------------------------------</p>
+        <p>collage -&gt; sobretodo en cosas de música</p>
+        <p>ésto me gusta, pero es lo que quieres hacer?</p>
+        <p>a Diego le gusta el trance, sabe hacerlo y puede diseccionarlo, pero al producirlo no le interesa.</p>
+        <p>ir conociéndose</p>
+        <p>y qué puede aportar</p>
+        <p>----------------------------------------------------</p>
+        <p>quizá te da miedo porque no son referencias válidas para ti</p>
+        <p>----------------------------------------------------</p>
+        <p><u>del house sale todo</u></p>
+        <p>los samples de hard techno salen de aquí<br>partir del origen para hacer algo nuevo</p>
+        <p>house --&gt; hard techno --&gt; ???<br>--------&gt; ???<br>--------&gt; ???</p>
+        <p>----------------------------------------------------</p>
+        <p>En la música tienes que tomar decisiones<br>y te va a marcar la canción entera<br>tu siguiente canción será
+            distinta</p>
+        <p>----------------------------------------------------</p>
+        <p>Comparar sonidos similares e identificar sus diferencias<br>y ver en qué manera afectarán a la canción</p>
+        <p>Dónde va a caer el peso?<br>Quién será el protagonista?<br>y los personajes secundarios?<br>cuál será la
+            historia
+            de cada uno?</p>
+        <p>----------------------------------------------------</p>
+        <p>patrones básicos<br>bombo 4x4 1 _ _ _ 2 _ _ _ 3 _ _ _ 4 _ _ _ <br>(básico)<br>otro : 1 _ _ _ _ _ 2 _ _ _ 3 _
+            _ _
+            4 _ <br>(generas más movimiento)</p>
+        <p>snare: _ _ 1 _ _ _ _ _ _ _ 2 _ _ _ _ _</p>
+        <p>darle groove =&gt; jugar con hihats<br> (incluso a destiempo)</p>
+        <p>----------------------------------------------------</p>
+        <p>escuchar e ir cohesionando</p>
+        <p><span style="opacity: 0.1;">plugin SH-2 =&gt; rutracker</span></p>
+        <p><u><span stype="opacity: 0.1;"> google "[nombre de plugin + rutracker].</span></u></p>
+        <p>----------------------------------------------------</p>
+        <p>baje =&gt; soporte rítmico + harmónico<br>-&gt; si no tienes bajo, el <b>bajo</b> es el bombo</p>
+        <p>el bajo marcará la tonalidad<br>es bueno que sea un "la"</p>
+        <p>//(por tema de frecuencias??? no terminé de entenderlo)</p>
+        <p>plugin spectrum analizer -&gt; <a href="https://www.voxengo.com/">voxengo</a></p>
+        <p>-&gt; ver cómo se forman los sonidos<br>los <u>enharmónicos</u> =&gt; todos los picos cuentan<br>si quitas un
+            pico con una EQ suena más distinto</p>
+        <p>----------------------------------------------------</p>
+        <p><u>Cuáles son los sonidos que me gustan?</u></p>
+        <p>----------------------------------------------------</p>
+        <p>Conseguir una base con sentido<br>y luego con un piano <u>improvisas</u></p>
+        <p>----------------------------------------------------</p>
+        <p>para la próxima clase hacer algo "a tu manera"<br>si piensas que no suena bien sigue adelante<br><b>y si hay
+                resistencia seguir por ahí</b></p>
+        <p><u>Buscar sonidos que te motiven</u><br>//sylenth<br>//serum<br><u>juno-106</u><br>básicos de Ableton!</p>
+        <p>----------------------------------------------------</p>
+        <p><u>delay 1/8 dotted</u>-&gt;truco para entrar en el mood<br><b>que puedas estar escuchándolo en bucle
+                (mientras
+                curras) una hora sin parar</b></p>
+        <p><b>----------------------------------------------------</b></p>
+        <p><b><u>plugins de roland</u></b></p>
+        <p><b>----------------------------------------------------</b></p>
+        <p><b><u>serum</u>-&gt; varios osciladores y hacerte amigue de la interfaz<br>//hacer investigación de plugins
+                que
+                tiene</b></p>
+
+        <div class="data-container">
+            <div class="data">
+                <small class="date">21/05/24 22:21</small>
+                <small class="place">casa</small>
+                <small class="type">apuntes clase <b>20/05/24 11:00</b></small>
+            </div>
+        </div>
+    </article>
+
 
     <article class="txt">
         <h3 class="titulo">como igual para el taller del lunes 20 de junio (primera clase)</h3>
-        
-            <p>es copiar resonance de soul eater<br>o bolso valentino</p>
-            <p>o la primera clase podria ser también<br>escuchar juntos esas canciones<br>y ver que puede ser <br>lo que quiero sacar
-                de ellas</p>
-            <p>lo que quiero <b>copiar</b> de ellas</p>
+
+        <p>es copiar resonance de soul eater<br>o bolso valentino</p>
+        <p>o la primera clase podria ser también<br>escuchar juntos esas canciones<br>y ver que puede ser <br>lo que
+            quiero sacar
+            de ellas</p>
+        <p>lo que quiero <b>copiar</b> de ellas</p>
 
         <div class="data-container">
             <div class="data">
                 <small class="date">18/05/24 13:29</small>
+                <small class="place">casa</small>
+                <small class="type">notas pre clase</small>
+            </div>
+        </div>
+    </article>
+
+    <article class="referentes">
+        <h3 class="titulo">qué coño me encanta salvaje de nathy peluso</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tPHpFWRGWO0" frameborder="0"
+            allowfullscreen></iframe>
+
+        <p></p>
+        <div class="data-container">
+            <div class="data">
+                <small class="date">16/05/24 10:42</small>
                 <small class="place">casa</small>
                 <small class="type">ref</small>
             </div>
@@ -182,8 +307,26 @@
     </article>
 
     <article class="referentes">
+        <h3 class="titulo">todo lo de <a href="https://www.instagram.com/otitomelo/">este hombre</a> me parece increible
+        </h3>
+        <p>pondré aquí un top 3 que hice el 14 de mayo y que creo que quedan muy bien juntos</p>
+        <p>este es <a href="https://www.instagram.com/reel/C6w0siTvBy1/?igsh=MmU3bm52eHhmeDl4">uno</a>
+            este es <a href="https://www.instagram.com/reel/C6KIehIPZ4x/?igsh=MWZ2ZWsxM2x3bnRtaA==">otro</a>
+            y <a href="https://www.instagram.com/reel/C4d-BjCvO5D/?igsh=anZldmhpMzh1YzFr">este</a> </p>
+
+        <div class="data-container">
+            <div class="data">
+                <small class="date">14/05/24 22:09</small>
+                <small class="place">casa</small>
+                <small class="type">ref</small>
+            </div>
+        </div>
+        </div>
+
+    </article>
+
+    <article class="referentes">
         <h3 class="titulo">teo de omoi (va durísima)</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bmkY2yc1K7Q" frameborder="0"
             allowfullscreen></iframe>
 
@@ -199,7 +342,6 @@
 
     <article class="referentes">
         <h3 class="titulo">sekai seifuku de neru</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HdC2cB_DZok" frameborder="0"
             allowfullscreen></iframe>
 
@@ -233,7 +375,6 @@
 
     <article class="referentes">
         <h3 class="titulo">vue den face de yelle</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/bdN6-DJVzl8" frameborder="0"
             allowfullscreen></iframe>
 
@@ -250,7 +391,6 @@
 
     <article class="referentes">
         <h3 class="titulo">iron lotus de mili</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/LxduFWbbndE" frameborder="0"
             allowfullscreen></iframe>
 
@@ -266,7 +406,6 @@
 
     <article class="referentes">
         <h3 class="titulo">axolotl de doon kanda</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ABgGo5ICLjk" frameborder="0"
             allowfullscreen></iframe>
 
@@ -282,7 +421,6 @@
 
     <article class="referentes">
         <h3 class="titulo">puro veneno de cometierra</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/u4KxEma_NDQ" frameborder="0"
             allowfullscreen></iframe>
 
@@ -298,7 +436,6 @@
 
     <article class="referentes">
         <h3 class="titulo">asturias de oklou</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lvgBoQxXfyA" frameborder="0"
             allowfullscreen></iframe>
 
@@ -312,11 +449,8 @@
         </div>
     </article>
 
-
-
     <article class="referentes">
         <h3 class="titulo">owaranai sekai de daoko</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tvwc7KT-I3U" frameborder="0"
             allowfullscreen></iframe>
 
@@ -332,7 +466,6 @@
 
     <article class="referentes">
         <h3 class="titulo">electro world de perfume mola que flipas</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/8zh0ouiYIZc" frameborder="0"
             allowfullscreen></iframe>
 
@@ -348,7 +481,6 @@
 
     <article class="referentes">
         <h3 class="titulo">esta de charisma.com</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/W36BQtGeDIc" frameborder="0"
             allowfullscreen></iframe>
 
@@ -361,10 +493,9 @@
             </div>
         </div>
     </article>
-
+    <!--
     <article class="referentes">
         <h3 class="titulo">como ésta de charisma.com también</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/gdBdfK2_UU8" frameborder="0"
             allowfullscreen></iframe>
 
@@ -377,10 +508,10 @@
             </div>
         </div>
     </article>
+    -->
 
     <article class="referentes">
         <h3 class="titulo">bolso valentino de maria escarmiento</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/yKDTBNUEBrI" frameborder="0"
             allowfullscreen></iframe>
         <p>y el de seguridad se sabe nuestro apellido</p>
@@ -398,7 +529,6 @@
 
     <article class="referentes">
         <h3 class="titulo">opening soul eater</h3>
-        <!-- Enlace al video de YouTube -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/zzJ8U8OtEsE" frameborder="0"
             allowfullscreen></iframe>
         <p>me gusta mucho que puedes ver cada personaje por su lado y es increíble es como ua los openings de anime en
@@ -412,27 +542,29 @@
         </div>
     </article>
 
-    <!--
 
-    <article class="canciones">
-        <h3 class="titulo">Mi Canción Original</h3>
-       
-        <audio controls>
-            <source src="ruta_del_audio.mp3" type="audio/mpeg">
-            Tu navegador no soporta el elemento de audio.
-        </audio>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia praesentium expedita quod nam, ratione quis
-            libero nisi unde minus! Numquam dolore alias ducimus necessitatibus illo laudantium assumenda adipisci. Rem,
-            minus?</p>
-        <div class="data-container">
-            <div class="data">
-                <small class="date">13/05/24 22:39</small>
-                <small class="place">lugar</small>
-                <small class="type">canción</small>
-            </div>
-        </div>
-    </article>
-    -->
+    <script>
+        document.querySelectorAll('article').forEach(article => {
+            const dataDiv = article.querySelector('.data');
+            const articleClass = article.classList[0];
+            const colorMapping = {
+                ideas: '#65E65E',
+                referentes: '#FFA1A8',
+                canciones: '#FF7F4D',
+                apuntes: '#A67BFF',
+                ejercicios: '#FFD700',
+                txt: '#888888' // Color de fondo gris para la clase "txt"
+            };
+            const backgroundColor = colorMapping[articleClass];
+            if (backgroundColor) {
+                dataDiv.style.backgroundColor = backgroundColor;
+                dataDiv.style.color = '#222'; // Color de texto predeterminado
+                dataDiv.style.boxShadow = `0 1px 2px ${backgroundColor.replace('0.7', '0.5')}`; // Ajuste del color de la sombra
+            }
+        });
+    </script>
+
+</body>
 
 </body>
 
