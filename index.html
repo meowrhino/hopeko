@@ -46,15 +46,19 @@
             color: #FFD700;
         }
 
+        .multi {
+            color: #00CED1;
+        }
+
         .data {
             margin-right: -20px;
-            color: #222;
+            /*color: #222;*/
             /* Color de texto predeterminado */
             padding: 3px 8px;
             margin-top: 50px;
             border-radius: 2px;
             text-align: right;
-            box-shadow: 0 1px 2px #FAFAD2;
+            /*box-shadow: 0 1px 2px #FAFAD2;*/
             display: inline-block;
         }
 
@@ -113,6 +117,38 @@
 </head>
 
 <body>
+
+    <article class="canciones">
+        <h3 class="titulo">volví a abrir lo de diego y conseguí añadirle capas</h3>
+
+        <audio controls><source src="audio/11_6_24_18_16.mp3" type="audio/mpeg"></audio>
+
+        <p>creo que me gusta bastante la parte del final</p>
+        <p>y hay algo en el caos del principio que siento que si bajo algunos sonidos de volumen y hago brillar más otros</p>
+        <p>darles más <b>protagonismo</b>, igual darles un poco más de <b>espacio</b></p>
+
+        <div class="data-container">
+            <div class="data">
+                <small class="date">11/06/24 18:32</small>
+                <small class="place">casa</small>
+                <small class="type"><b>canciones</b></small>
+            </div>
+        </div>
+    </article>
+
+    <article class="multi">
+        <h3 class="titulo">con diego hicimos ésto</h3>
+
+        <audio controls><source src="audio/4_6_24_baseConDiego.mp3" type="audio/mpeg"></audio>
+    
+        <div class="data-container">
+            <div class="data">
+                <small class="date">04/06/24 19:47</small>
+                <small class="place">casa</small>
+                <small class="type"><b>apuntes, canciones</b></small>
+            </div>
+        </div>
+    </article>
 
     <article class="ejercicios">
         <h3 class="titulo">para la clase que viene <b>(martes 4 junio 2024)</b></h3>
@@ -267,7 +303,7 @@
             <div class="data">
                 <small class="date">21/05/24 22:21</small>
                 <small class="place">casa</small>
-                <small class="type">apuntes clase <b>20/05/24 11:00</b></small>
+                <small class="type">apuntes<b>20/05/24 11:00</b></small>
             </div>
         </div>
     </article>
@@ -286,7 +322,7 @@
             <div class="data">
                 <small class="date">18/05/24 13:29</small>
                 <small class="place">casa</small>
-                <small class="type">notas pre clase</small>
+                <small class="type">notas</small>
             </div>
         </div>
     </article>
@@ -553,7 +589,8 @@
                 canciones: '#FF7F4D',
                 apuntes: '#A67BFF',
                 ejercicios: '#FFD700',
-                txt: '#888888' // Color de fondo gris para la clase "txt"
+                txt: '#888888', // Color de fondo gris para la clase "txt"
+                multi: '#00CED1'
             };
             const backgroundColor = colorMapping[articleClass];
             if (backgroundColor) {
